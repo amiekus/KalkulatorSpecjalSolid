@@ -1,0 +1,52 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pusta strona z zakładkami</title>
+    <style>
+        .input-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .label {
+            margin-right: 5px;
+        }
+
+        .options-container {
+            display: flex;
+            align-items: center;
+            margin-top: 5px;
+        }
+
+            .options-container select {
+                margin-left: 5px;
+            }
+
+        .calculate-button {
+            margin-left: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+    </header>
+    <h3 class="label">Furtka Specjal</h3>
+    <div class="input-container">
+        <h5 class="label">Szerokość:</h5>
+        <input type="text" id="szerokosc" name="szerokosc">
+    </div>
+
+    <div class="options-container">
+        <h5 style="margin-right: 10px;">Podana szerokość to:</h5>
+        <select id="opcja" name="opcja">
+            <option value="skrzydlo">Wymiar skrzydła</option>
+            <option value="miedzy-slupami" selected>Wymiar między słupami stalowymi / istniejącymi</option>
+            <option value="ze-slupami">Wymiar ze słupami stalowymi</option>
+        </select>
+        <button class="calculate-button">Wylicz szerokość zamówieniową</button>
+    </div>
+</body>
+</html>
